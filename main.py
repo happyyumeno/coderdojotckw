@@ -8,19 +8,35 @@ https://zenn.dev/ohtaman/articles/streamlit_tips
 """
 
 import streamlit as st
+from PIL import Image
 
 st.write('テスト')
 
-def first_page():
-    p='1'
-    st.markdown(f"""
-    # Welcome to the {p} Page!
-    
-    This is the first page.
-    
-    ![](https://picsum.photos/704/300?first)
-    """)
+f = open('myfile.txt', 'r', encoding='UTF-8')
+data = f.read()
+print(data)
+f.close()
 
+link='https://picsum.photos/704/300?second'
+
+
+
+def first_page():
+    p=data
+    st.markdown(f"""
+    # {p} 
+    []({link})
+    """
+    )
+    img=Image.open('ccc.JPG')
+    st.image(img,caption='aaa',use_column_width=True)
+    num=3
+    col= st.columns(num)
+
+    for i in list(range(0,num,1)):
+        with col[i]:
+            st.header("図"+str(i+1))
+            st.image(str(i+1)+".JPG", use_column_width=True)
 
 def second_page():
     p='2'
