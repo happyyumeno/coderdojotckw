@@ -1,0 +1,8 @@
+# -*- coding: utf-8 -*-
+#https://www.colordic.org/
+[theme]
+primaryColor="#ffd700" # ポイント
+backgroundColor="#deb887" # 背景
+secondaryBackgroundColor="#ffffe0" # 左背景
+textColor="#000000" # 白
+font="sans serif"
