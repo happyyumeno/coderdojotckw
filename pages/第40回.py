@@ -16,7 +16,7 @@ unsafe_allow_html=True)
 
 # https://github.com/happyyumeno/coderdojotckw/blob/master/%E7%AC%AC40%E5%9B%9E/1.jpg?raw=true
 
-for i in list(range(0,5)):
+for i in list(range(0,6)):
     path="https://github.com/happyyumeno/coderdojotckw/blob/master/%E7%AC%AC40%E5%9B%9E/"
     path=path+str(i+1)+".jpg?raw=true"
     st.header("NO."+str(i+1))
