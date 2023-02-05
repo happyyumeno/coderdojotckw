@@ -10,8 +10,10 @@ st.markdown(
 '<p><span style = "background-color:#ffb6c1;color:#ffffff;font-size: 30px;font-family:Kosugi Maru;"> ★　CoderDojo Tachikawa　★ </span></p>',
 unsafe_allow_html=True)
 
+# https://github.com/happyyumeno/coderdojotckw/blob/master/%E7%AC%AC40%E5%9B%9E/1.jpg?raw=true
+
 for i in list(range(0,5)):
-    path="./第40回/"
-    path=path+str(i+1)
+    path="https://github.com/happyyumeno/coderdojotckw/blob/master/%E7%AC%AC40%E5%9B%9E/"
+    path=path+str(i+1)+".jpg?raw=true"
     st.header("NO."+str(i+1))
     st.image(f"{path}.JPG", use_column_width=True)
