@@ -25,8 +25,8 @@ import streamlit as st
 from PIL import Image
 
 st.set_page_config(
-    page_title="sttest", 
-    page_icon='ccc.JPG', 
+    page_title="CoderDojo Tachikawa", 
+    page_icon='./main/logo.jpg', 
     layout="wide", 
     initial_sidebar_state="auto", 
     menu_items={
@@ -47,32 +47,33 @@ f.close()
 def main():
     
 
-    txt1 = '**<p style="color:#000000;font-size: 50px;">作品紹介ページ</p>**'
-    st.write(txt1, unsafe_allow_html=True)
+    # txt1 = '**<p style="color:#000000;font-size: 50px;">CoderDojo 立川</p>**'
+    # st.write(txt1, unsafe_allow_html=True)
 
     # st.markdown(f"""
     # # 作品紹介ページ
     # """)
 
-    # st.markdown(
-    # '<p><span style = "background-color:#008080;color:#ffffff;font-size: 30px;font-family:Kosugi Maru;"> ★　CoderDojo Tachikawa　★ </span></p>',
-    # unsafe_allow_html=True)
+    st.markdown(
+    '<p><span style = "background-color:#008080;color:#ffffff;font-size: 30px;font-family:Kosugi Maru;"> ★　CoderDojo Tachikawa　★ </span></p>',
+    unsafe_allow_html=True)
 
     logo="./main/dojologo.png"
+    st.image(f"{logo}", use_column_width=True)
 
-    cols = st.columns(2)
-    with cols[0]:
-        # st.markdown("""\n""")        
-        st.write("\n")
-        st.write("\n")
-        st.write("\n")
-        st.write("\n")
-        st.write("\n")
-        st.markdown(
-        '<p><span style = "background-color:#008080;color:#ffffff;font-size: 30px;font-family:Kosugi Maru;">★　CoderDojo Tachikawa　★ </span></p>',
-        unsafe_allow_html=True)
-    with cols[1]:
-        st.image(f"{logo}", use_column_width=True)
+    # cols = st.columns(2)
+    # with cols[0]:
+    #     # st.markdown("""\n""")        
+    #     st.write("\n")
+    #     st.write("\n")
+    #     st.write("\n")
+    #     st.write("\n")
+    #     st.write("\n")
+    #     st.markdown(
+    #     '<p><span style = "background-color:#008080;color:#ffffff;font-size: 30px;font-family:Kosugi Maru;">★　CoderDojo Tachikawa　★ </span></p>',
+    #     unsafe_allow_html=True)
+    # with cols[1]:
+    #     st.image(f"{logo}", use_column_width=True)
 
 
     video_file = open('./main/myvideo.mp4', 'rb')
